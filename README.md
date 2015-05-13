@@ -1,8 +1,7 @@
 Here's how to use this in Docker:
 
       docker build -t yourname/node-dev:0.1 .
-      docker run -i -t --rm -p 3000:3000 -p 35729:35729 -v `pwd`:/src 
-yourname/node-dev:0.1
+      docker run -i -t --rm -p 3000:3000 -p 35729:35729 -v `pwd`:/src  yourname/node-dev:0.1
 
 You'll get a /src directory in your Docker, which corresponds to this
 git repo.  You'll get a docker ssh # prompt, which means you're using
